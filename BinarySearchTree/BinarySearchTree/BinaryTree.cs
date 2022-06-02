@@ -53,7 +53,20 @@ namespace BinarySearchTree
                     this.rightSide++;
                     this.right.Display();                    
                 }
-            }           
+            }
+            int num = -1;
+            public void search(int element, BinarySearchTree<T> tree)
+            {
+                num++;
+                if (tree == null)
+                    Console.WriteLine("Tree is Empty.");
+                if (tree.NodeData.Equals(element))
+                    Console.WriteLine("Node is present in tree at {0} index.", num);
+                if (element.CompareTo(tree.NodeData) < 0)
+                    search(element, tree.left);
+                else if (element.CompareTo(tree.NodeData) > 0)
+                    search(element, tree.right);
+            }
         }
     }
 }
