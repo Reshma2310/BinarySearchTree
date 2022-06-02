@@ -9,6 +9,17 @@ namespace BinarySearchTree
             BinaryTree.BinarySearchTree<int> binary = new BinaryTree.BinarySearchTree<int>(56);
             binary.AddNode(30);
             binary.AddNode(70);
+            binary.AddNode(22);
+            binary.AddNode(40);
+            binary.AddNode(60);
+            binary.AddNode(95);
+            binary.AddNode(11);
+            binary.AddNode(65);
+            binary.AddNode(3);
+            binary.AddNode(16);
+            binary.AddNode(63);
+            binary.AddNode(67);
+            Console.WriteLine("\n*------Binary Tree Output is------*");
             binary.Display();
         }
     }

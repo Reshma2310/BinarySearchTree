@@ -44,16 +44,16 @@ namespace BinarySearchTree
             {
                 if (this.left != null)
                 {
-                    this.leftSide++;
-                    this.left.Display();
+                    this.leftSide = this.leftSide+1;
+                    this.left.Display();                    
                 }
                 Console.WriteLine(this.NodeData);
                 if (this.right != null)
                 {
                     this.rightSide++;
-                    this.right.Display();
+                    this.right.Display();                    
                 }
-            }
+            }           
         }
     }
 }
